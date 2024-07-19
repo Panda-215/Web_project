@@ -31,7 +31,7 @@
       border-right: 5px solid;
       white-space: nowrap;
       overflow: hidden;
-      animation: typing 10s, cursor .4s step-end infinite alternate;
+      animation: typing 4s, cursor .4s steps(20, end) forwards infinite alternate;
     }
 
     @keyframes cursor {
@@ -44,8 +44,11 @@
       from {
         width: 0;
       }
+      to {
+        width: 100%;
+      }
+
     }
- 
   </style>
   <!-- =======================================================
   * Template Name: PhotoFolio
